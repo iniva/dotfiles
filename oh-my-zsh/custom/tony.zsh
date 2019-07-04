@@ -13,7 +13,7 @@ alias docker-ps-fancy="docker ps --format \"table {{.ID}}\t{{.Names}}\t{{.Status
 
 # DOCKER COMPOSE
 alias dup="docker-compose up -d"
-alias ddown="docker-componse down"
+alias ddown="docker-compose down"
 alias dstop="docker-compose stop"
 alias dstart="docker-compose start -d"
 alias dexec="docker-compose exec"
