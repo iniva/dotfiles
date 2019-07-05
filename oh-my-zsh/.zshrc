@@ -48,6 +48,10 @@ source "$ZSH/custom/themes/theme-config.sh"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+DISABLE_MAGIC_FUNCTIONS=true
+ZSH_AUTOSUGGEST_MANUAL_REBIND=1
+COMPLETION_WAITING_DOTS=true
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
