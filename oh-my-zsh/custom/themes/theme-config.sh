@@ -1,4 +1,5 @@
-# Power Level 9K
+# Using Power Level 10K (which extends Power Level 9K theme)
+# https://github.com/romkatv/powerlevel10k
 # Shell is configured to use "Hack Nerd Font Mono"
 # https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack/Regular/complete
 POWERLEVEL9K_MODE=nerdfont-complete
@@ -85,4 +86,4 @@ POWERLEVEL9K_VPN_IP_INTERFACE=tun
 POWERLEVEL9K_WHITESPACE_BETWEEN_LEFT_SEGMENTS=' '
 POWERLEVEL9K_WHITESPACE_BETWEEN_RIGHT_SEGMENTS=' '
 
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
