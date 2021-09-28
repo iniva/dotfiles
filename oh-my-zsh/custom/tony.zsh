@@ -85,5 +85,14 @@ function get_aws_ip () {
     fi
     aws ec2 describe-instances --filter $FILTER | grep PublicIpAddress\":\ \" | grep -oe "[0-9]\{,3\}\(\.[0-9]\{,3\}\)\{3\}" | awk '{ print "ssh ubuntu@"$1 }'
 }
+
+function tenor_gif_sizes_for_id () {
+    if [ "" = "$1" ]; then
+        echo "You must specify a gif id at the end of the URL: https://tenor.com/view/some-gif-{id}"
+        return
+    fi
+
+    curl "https://api.tenor.com/v1/gifs?key=LIVDSRZULELA&anon_id={YOUR_API_KEY}media_filter=minimal&ids=$1" -v | jq '.results[0] | .media[0] | { tiny: .tinygif.url, normal: .gif.url }'
+}
 #---------------------------------------
 #=======================================
